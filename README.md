@@ -7,3 +7,6 @@ A Flutter application for parsing rest api and displaying it on screen.
 
 ## For more info
 Read it here : https://flutter.io/docs/cookbook/networking/background-parsing
+
+## Special thanks to 
+https://www.androidhive.info/ for api
