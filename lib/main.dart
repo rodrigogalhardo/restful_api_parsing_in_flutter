@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
+import 'package:rest_api_parsing/screens/list_view/home_page.dart';
 import 'package:rest_api_parsing/screens/page_view/page_view_page.dart';
 
 void main() => runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PageViewPage(),
+      home: HomePage(),
     );
   }
 }

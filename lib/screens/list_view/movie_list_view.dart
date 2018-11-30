@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:rest_api_parsing/repository/model/movie.dart';
+import 'package:rest_api_parsing/repository/model/serialized_movie.dart';
 
 class MovieListWidget extends StatelessWidget {
-  final Future<MovieList> movieListFuture;
+  final Future<SerializedMovieList> movieListFuture;
 
   MovieListWidget(this.movieListFuture);
 
@@ -12,7 +13,7 @@ class MovieListWidget extends StatelessWidget {
         future: movieListFuture,
         builder: (BuildContext buildContext, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
-            MovieList movieList = snapshot.data;
+            SerializedMovieList movieList = snapshot.data;
             return ListView.builder(
                 itemCount: movieList.movieList.length,
                 padding: const EdgeInsets.all(14.0),

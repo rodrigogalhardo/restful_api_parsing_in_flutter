@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Stack(
         fit: StackFit.expand,
-        children: <Widget>[MovieListWidget(MovieApiProvider().getMovies())],
+        children: <Widget>[MovieListWidget(MovieApiProvider().getSerializedMovies())],
       ),
     );
   }
